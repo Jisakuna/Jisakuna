@@ -2,8 +2,8 @@
 
 <img src="assets/banner.svg" alt="Jisakuna — Code, robotics, and curiosity" width="720">
 
-A self-motivated developer who loves learning by doing.<br>
-Turning little sparks of curiosity into things I can share—with plenty of late-night experiments along the way.
+I'm a curious neko who pokes code all the day(Not real).<br>
+Turning little sparks of curiosity into tiny creations, not allergic to caffeine ☕
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
