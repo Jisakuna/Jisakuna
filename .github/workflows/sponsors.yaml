@@ -47,7 +47,7 @@ jobs:
             echo 'Sponsor files are unchanged.'
             exit 0
           fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'Jisakuna'
+          git config user.email '225521240+Jisakuna@users.noreply.github.com'
           git commit -m 'chore: update sponsors'
           git push
