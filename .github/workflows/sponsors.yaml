@@ -1,0 +1,53 @@
+name: Update sponsors
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - sponsorkit.config.js
+      - package.json
+      - pnpm-lock.yaml
+      - .github/workflows/sponsors.yaml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-sponsors
+  cancel-in-progress: false
+
+jobs:
+  sponsors:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v6
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Generate sponsor images and data
+        env:
+          SPONSORKIT_GITHUB_TOKEN: ${{ secrets.SPONSORKIT_GITHUB_TOKEN }}
+        run: |
+          if [ -z "$SPONSORKIT_GITHUB_TOKEN" ]; then
+            echo '::error::Add the SPONSORKIT_GITHUB_TOKEN Actions secret with read:user and read:org scopes.'
+            exit 1
+          fi
+          pnpm exec sponsorkit
+      - name: Commit generated files only when changed
+        run: |
+          git add sponsorkit/
+          if git diff --cached --quiet; then
+            echo 'Sponsor files are unchanged.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: update sponsors'
+          git push

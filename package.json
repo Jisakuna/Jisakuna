@@ -1,0 +1,12 @@
+{
+  "name": "jisakuna-profile",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.23.0",
+  "scripts": {
+    "build": "sponsorkit"
+  },
+  "devDependencies": {
+    "sponsorkit": "18.0.0"
+  }
+}
