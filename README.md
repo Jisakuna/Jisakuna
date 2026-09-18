@@ -1,17 +1,28 @@
-# Hi, I'm Jisakuna 👋
+<div align="center">
 
-Welcome to my GitHub profile!
+<img src="assets/banner.svg" alt="Jisakuna — Code, robotics, and curiosity" width="720">
 
-## Explore my work
+Exploring robotics, multimodal data, and tools that make development more enjoyable.<br>
+Learning through projects, one experiment at a time.
 
-You can find my public projects and contributions here on GitHub.
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![ROS](https://img.shields.io/badge/ROS-22314E?style=for-the-badge&logo=ros&logoColor=white)
 
-- [Browse my repositories](https://github.com/Jisakuna?tab=repositories)
-- [See my recent activity](https://github.com/Jisakuna?tab=overview)
+*A few tools from my projects.*
+
+[Projects](https://github.com/Jisakuna?tab=repositories) · [X](https://x.com/Ji_sakuna) · [LinkedIn](https://www.linkedin.com/in/ji-sakuna-4673a539a/)
+
+</div>
+
+---
 
 ## Sponsors
 
-Thank you to everyone who supports my work!
+If you enjoy what I build, thank you for being here. Exploring a project, sharing feedback, or contributing code all mean a lot.
+
+**Thank you to my sponsors for supporting my work!**
 
 ![Sponsors](./sponsorkit/sponsors.svg)
 
